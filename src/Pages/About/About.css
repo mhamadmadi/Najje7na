@@ -1,0 +1,88 @@
+/* Hero Section */
+.hero-title{
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+.hero-title p{
+    margin-top: 5px;
+    color: grey;
+}
+
+.hero-content{
+    margin: 30px;
+}
+
+.hero-content p{
+    margin: 10px;
+    line-height: 1;
+}
+/* End Hero Section */
+
+/* Najjehne Section */
+.najjehne-section{
+    padding: 30px;
+}
+
+.najjehne-title{
+    text-align: center;
+}
+
+.najjehne-title p{
+    margin-top: 10px;
+    color: grey;
+}
+
+.najjehne-content{
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 20px;
+}
+
+.najjehne-content p{
+    line-height: 2;
+}
+/* End Najjehne Section */
+
+/* Founder Section */
+.founder-section{
+    padding: 30px;
+}
+
+.founder-title{
+    text-align: center;
+}
+
+.founder-title p{
+    margin-top: 10px;
+    color: grey;
+}
+
+.founder-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.founder-introduce p{
+    width: 100%;
+    max-width: 1000px;
+    line-height: 1.5;
+}
+
+.founder-image img{
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .founder-content{
+    display: flex;
+    flex-direction: column;
+    }
+}
+/* End Founder Section

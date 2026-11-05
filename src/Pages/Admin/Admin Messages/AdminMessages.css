@@ -1,0 +1,55 @@
+.messages-table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.messages-table th, .messages-table td{
+    text-align: left;
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+}
+
+.messages-table th{
+    background-color: #012653;
+    color: white;
+    white-space: nowrap;
+}
+
+.message-cell{
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.access-badge{
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 1rem;
+}
+
+.access-badge.partial{ 
+    background-color: #fff3cd; color: #856404; 
+}
+
+.access-badge.final{ 
+    background-color: #d4edda; color: #155724; 
+}
+
+.delete-btn{
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    padding: 5px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.table-scroll{
+    width: 100%;
+    overflow-x: auto;
+}

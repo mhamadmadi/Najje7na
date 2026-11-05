@@ -1,0 +1,157 @@
+
+.agreement-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.agreement-modal {
+    width: 100%;
+    max-width: 850px;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.agreement-header {
+    padding: 22px 28px;
+    background: #012653;
+    color: white;
+}
+
+.agreement-header h2 {
+    margin: 0 0 10px;
+    font-size: 1.35rem;
+    line-height: 1.5;
+}
+
+.agreement-header p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+.agreement-body {
+    padding: 25px 30px;
+    overflow-y: auto;
+    color: #333;
+    line-height: 1.7;
+}
+
+.agreement-body > p {
+    margin-top: 0;
+    margin-bottom: 22px;
+}
+
+.agreement-section {
+    margin-bottom: 22px;
+}
+
+.agreement-section h3 {
+    color: #012653;
+    font-size: 1.05rem;
+    margin-bottom: 8px;
+}
+
+.agreement-section p {
+    margin: 6px 0 10px;
+}
+
+.agreement-section ul {
+    padding-left: 25px;
+    margin: 8px 0;
+}
+
+.agreement-section li {
+    margin-bottom: 7px;
+}
+
+.agreement-student-info {
+    padding: 15px;
+    margin-top: 20px;
+    background: #f2f5f9;
+    border-left: 4px solid #012653;
+    border-radius: 5px;
+}
+
+.agreement-student-info p {
+    margin: 5px 0;
+}
+
+.agreement-footer {
+    padding: 18px 28px;
+    border-top: 1px solid #ddd;
+    background: #fafafa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.agreement-footer p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.agreement-footer button {
+    padding: 12px 22px;
+    background: #012653;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.agreement-footer button:hover:not(:disabled) {
+    background: #034080;
+}
+
+.agreement-footer button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+    .agreement-overlay {
+        padding: 10px;
+    }
+
+    .agreement-modal {
+        max-height: 95vh;
+    }
+
+    .agreement-header {
+        padding: 16px;
+    }
+
+    .agreement-header h2 {
+        font-size: 1.05rem;
+    }
+
+    .agreement-body {
+        padding: 18px;
+        font-size: 0.9rem;
+    }
+
+    .agreement-footer {
+        padding: 14px;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .agreement-footer button {
+        width: 100%;
+    }
+}

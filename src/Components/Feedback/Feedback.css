@@ -1,0 +1,131 @@
+.feedback-section {
+    width: 100%;
+    padding: 80px 20px;
+    box-sizing: border-box;
+    background: #f7f9fc;
+}
+
+.feedback-header {
+    max-width: 700px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.feedback-header h2 {
+    margin: 0 0 15px;
+    color: #012957;
+    font-size: 2.2rem;
+}
+
+.feedback-header p {
+    margin: 0;
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.feedback-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feedback-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
+    padding: 30px;
+    position: relative;
+    box-sizing: border-box;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #eeeeee;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.feedback-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 35px rgba(1, 41, 87, 0.12);
+}
+
+.quote-icon {
+    color: #d8a51d;
+    font-size: 2.4rem;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.feedback-message {
+    flex: 1;
+    margin: 0 0 25px;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.feedback-student {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-top: 18px;
+    border-top: 1px solid #eeeeee;
+}
+
+.student-avatar {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: #012957;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.student-info h4 {
+    margin: 0 0 4px;
+    color: #012957;
+    font-size: 0.95rem;
+}
+
+.student-info span {
+    color: #999;
+    font-size: 0.75rem;
+}
+
+@media (max-width: 900px) {
+    .feedback-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .feedback-section {
+        padding: 55px 15px;
+    }
+
+    .feedback-header {
+        margin-bottom: 30px;
+    }
+
+    .feedback-header h2 {
+        font-size: 1.7rem;
+    }
+
+    .feedback-container {
+        grid-template-columns: 1fr;
+    }
+
+    .feedback-card {
+        min-height: auto;
+        padding: 25px 20px;
+    }
+
+}

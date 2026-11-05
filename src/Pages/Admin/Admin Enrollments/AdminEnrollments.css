@@ -1,0 +1,33 @@
+.admin-enrollments{
+    max-width: 500px;
+}
+
+.enrollment-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.enrollment-form select{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.enrollment-form button{
+    padding: 10px;
+    background-color: #012653;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.error{ 
+    color: #c0392b; 
+}
+
+.success{ 
+    color: #2e7d32; 
+}

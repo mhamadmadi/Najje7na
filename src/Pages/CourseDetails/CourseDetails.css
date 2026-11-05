@@ -1,0 +1,121 @@
+/*Description Section*/
+.description-section{
+    padding: 60px 40px;
+}
+
+.description-title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.description-content{
+    margin: 20px;
+}
+
+.description-content h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.description-content .this-course-for{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.description-content .what-you-learn{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.description-content p{
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+.description-content ul{
+    display: flex;
+    flex-direction: column;
+    line-height: 2.4;
+}
+/*End Description Section*/
+
+/*Course Hero Section*/
+.course-hero{
+    padding: 60px 40px;
+}
+
+.course-hero-university{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.course-hero-university img{
+    width: 100%;
+    max-width: 150px;
+}
+
+.course-hero-content{
+    line-height: 30px;
+}
+
+.course-hero-content p{
+    font-size: 16px;
+    font-style: italic;
+}
+
+.course__pricing{ 
+    display: flex; 
+    gap: 10px; 
+    margin-bottom: 15px; 
+}
+
+.price-box{ 
+    text-align: center; 
+    padding: 10px 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+}
+
+.price-box.full{ 
+    border-color: #e4b020; 
+    background-color: #fffbf0; 
+}
+
+.price-label{ 
+    display: block; 
+    font-size: 0.8rem; 
+    color: #666; 
+}
+
+.price-value{ 
+    font-weight: bold; 
+    font-size: 1.1rem; 
+    color: #012653; 
+}
+
+.course__btn{
+    width: 100%;
+    max-width: 150px;;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #012653;
+    color: white;
+    cursor: pointer;
+}
+
+.whatsapp-group-link{
+    display: block;
+    background-color: #25D366;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    width: 100%;
+    max-width: 200px;
+}
+/*End Course Hero Section*/

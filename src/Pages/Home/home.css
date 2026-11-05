@@ -1,0 +1,386 @@
+/*Hero Section*/
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: url(/images/Library.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 15px;
+}
+
+.header-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.header-container > * {
+    position: relative;
+    z-index: 1;
+}
+
+.header-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 150px 0;
+}
+
+.header-title h1{
+    width: 100%;
+    max-width: 600px;
+    font-size: 42px;
+    color: #f8f1f1;
+    text-align: center;
+}
+
+.header-title p{
+    padding: 10px;
+    text-align: center;
+    color: #f8f1f1;
+    font-size: 22px;
+}
+
+.header-title button{
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    font-size: 16px;
+    background: #e4b020;
+    color: #222;
+    margin: 10px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px){
+   .header-container{
+    display: flex;
+    flex-direction: column;
+   }
+}
+/*End Hero Section*/
+
+/*About Us Section*/
+.about-section {
+    padding: 70px 20px;
+}
+
+.about-title h1{
+    text-align: center;
+    padding: 60px;
+    font-size: 2rem;
+    color: #13427a;
+}
+
+.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 230px;
+}
+
+.about-content strong {
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.about-content p {
+    margin-bottom: 10px;
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 15px;
+}
+
+@media (max-width: 768px){
+   .about-container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .about-content strong{
+        text-align: center;
+    }
+
+    .about-image img{
+        margin-bottom: 50px;
+    }
+}
+/*End About Us Section*/
+
+/*Universities Section*/
+.university-section {
+  padding: 70px 20px;
+  background: transparent;
+}
+
+.university-title h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #13427a;
+}
+
+.university-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  padding: 30px;
+}
+
+.university-item {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  padding: 24px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  border: 1px solid #555;
+}
+
+.university-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgb(150, 140, 140);
+}
+
+.university-item img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 14px;
+}
+
+.university-item h2 {
+  margin: 8px 0;
+  font-size: 1.25rem;
+  color: #0a2342;
+}
+
+.university-item p {
+  margin: 0;
+  color: #555;
+  font-size: 1rem;
+}
+
+.university-item a{
+    display: inline-block;
+    background-color: black;
+    width: 100%;
+    max-width: 120px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.coming-soon{
+    display: inline-block;
+    background-color: #999;
+    width: 100%;
+    max-width: 120px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .university-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .university-item {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
+
+/*End Faculty Section*/
+
+/* Journey Section */
+
+.journey-section {
+    padding: 70px 40px;
+    background-color: #f8f9fa;
+}
+
+.journey-title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.journey-title h1 {
+    font-size: 2.3rem;
+    color: #13427a;
+}
+
+.journey-title p {
+    margin: 15px auto 0;
+    max-width: 650px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.journey-card {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.journey-item {
+    flex: 1;
+    max-width: 350px;
+    background-color: white;
+    border: 1px solid #eeeeee;
+    border-radius: 15px;
+    padding: 45px 30px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.journey-item:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.journey-item i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+    border-radius: 50%;
+    color: white;
+    background-color: #13427a;
+}
+
+.journey-item h3 {
+    margin-top: 25px;
+    font-size: 1.3rem;
+    color: #222;
+}
+
+.journey-item p {
+    margin-top: 15px;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+@media (max-width: 768px) {
+    .journey-section {
+        padding: 50px 20px;
+    }
+
+    .journey-title h1 {
+        font-size: 1.8rem;
+    }
+
+    .journey-card {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .journey-item {
+        width: 100%;
+        max-width: 450px;
+        padding: 40px 25px;
+    }
+}
+/* End Journey Section */
+
+/*Contact Section*/
+.contact-section{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.contact-title h1{
+    margin-bottom: 15px;
+    color: #13427a;
+}
+
+.contact-title p{
+    color: #666;
+}
+
+.contact-social{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+.contact-item{
+    background-color: #c6cfc7;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    width:250px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.contact-item i{
+    font-size:28px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.contact-item:hover{
+    transform: translateY(-5px);
+    transition:0.3s;
+}
+
+.contact-item h3{
+    margin-top: 10px;
+}
+
+.contact-item p{
+    margin-top: 10px;
+}
+
+.contact-item p a{
+    text-decoration: none;
+    color: blue;
+}
+
+@media (max-width: 768px){
+    .contact-social .contact-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+/*End Contact Section*/

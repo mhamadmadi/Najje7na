@@ -1,0 +1,78 @@
+.mycourses-page{
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.mycourses-note{
+    color: #888;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+.mycourses-grid{
+    display: grid;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    gap: 20px;
+} 
+
+.mycourse-card{
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border: 1px solid #555;
+}
+
+.mycourse-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgb(150, 140, 140);
+}
+
+.mycourse-card img{
+    width: 100%;
+    max-width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.mycourse-card h3{
+    margin-bottom: 20px;
+}
+
+.access-badge{
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    margin-top: 8px;
+}
+
+.access-badge.partial{
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.access-badge.final{
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.access-badge.full{ 
+    background-color: #cce5ff; 
+    color: #004085;
+} 
+
+@media (max-width: 768px) {
+    .mycourses-grid{
+        display: flex;
+        flex-direction: column;
+    }
+}

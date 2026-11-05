@@ -1,0 +1,95 @@
+.login-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.form-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid #ccc;
+  padding: 40px;
+  border-radius: 10px; 
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.logo-image img{
+  border-radius: 10px;
+  max-width: 150px;
+}
+
+.form-title h2{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.form-title p{
+  font-size: 1rem;
+  text-align: center;
+}
+
+.form-input{
+  padding: 5px;
+}
+
+.form-input label{
+  font-size: 1rem;
+}
+
+.form-input input{
+  padding: 8px;
+  width: 300px;
+  border-radius: 10px;
+  border: 1px solid;
+  padding-right: 35px;
+}
+
+.password-field{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.password-field input{
+  width: 300px;
+  padding-right: 35px;
+}
+
+.password-toggle{
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.password-toggle:hover{
+  color: #012653;
+}
+
+.form-container button{
+  padding: 10px;
+  width: 300px;
+  margin: 7px;
+  background-color: rgb(53, 153, 53);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.form-container button:hover{
+background-color: rgb(40,130,40);
+transition: 0.3s;
+}
+
+.error{
+  color: red;
+  font-size: 14px;
+}

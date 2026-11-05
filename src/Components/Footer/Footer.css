@@ -1,0 +1,107 @@
+.footer {
+    background-color: #012957;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-section img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+}
+
+.footer-section p a {
+    text-decoration: none;
+    color: #e7c055;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.courses-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.footer-section p {
+    margin: 10px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    font-size: 14px;
+}
+
+.signature{
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .footer{
+        margin-top: 60px;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .footer-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-section ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .courses-flex {
+        align-items: center;
+    }
+
+}

@@ -1,0 +1,58 @@
+.courses-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.admin-courses h1{
+    margin-bottom: 15px;
+}
+
+.add-course-btn{
+    background-color: #012653;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.table-scroll{
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table-scroll table{
+    min-width: 500px;
+}
+
+.courses-table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.courses-table th, .courses-table td{
+    text-align: left;
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.courses-table th{
+    background-color: #012653;
+    color: white;
+}
+
+.manage-link{
+    color: #012653;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.manage-link:hover{
+    text-decoration: underline;
+}

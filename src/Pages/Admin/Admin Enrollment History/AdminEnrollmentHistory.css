@@ -1,0 +1,75 @@
+.export-btn{
+    background-color: #1d6f42;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.export-btn:hover{
+    background-color: #175c37;
+}
+
+.enrollments-table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.enrollments-table th, .enrollments-table td{
+    text-align: left;
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.enrollments-table th{
+    background-color: #012653;
+    color: white;
+}
+
+.access-badge{
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+
+.access-badge.partial{ 
+    background-color: #fff3cd; 
+    color: #856404; 
+}
+
+.access-badge.final{ 
+    background-color: #d4edda; 
+    color: #155724; 
+}
+
+.table-scroll{
+    width: 100%;
+    overflow-x: auto;
+}
+
+.delete-btn{
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+.delete-btn:hover{
+    background-color: #a5311f;
+}
+
+.delete-btn:disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+}

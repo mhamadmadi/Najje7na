@@ -1,0 +1,63 @@
+.admin-course-editor{
+    max-width: 700px;
+}
+
+.course-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.form-row{
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .form-input-editor{
+    flex: 1;
+}
+
+.form-input-editor label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.hint{
+    font-weight: normal;
+    color: #888;
+    font-size: 0.8rem;
+}
+
+.form-input-editor input, 
+.form-input-editor select, 
+.form-input-editor textarea{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.save-course-btn{
+    padding: 12px;
+    background-color: #012653;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.save-course-btn:disabled{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px){
+    .form-row{
+        flex-direction: column;
+    }
+}
