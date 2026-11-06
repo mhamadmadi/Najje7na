@@ -1,16 +1,30 @@
-# React + Vite
+# Najje7na – Online Learning Platform 🎓
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Najje7na** is an online learning platform developed to support university students through structured online courses, educational videos, and accessible academic resources.
 
-Currently, two official plugins are available:
+The platform provides an organized learning experience, allowing students to explore courses, access lessons, and find educational materials relevant to their universities and majors.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🚀 Key Features
+- **Online Courses:** Browse and access structured educational courses.
+- **Video Lessons:** Watch educational content through integrated video streaming.
+- **University Resources:** Explore academic content organized by universities and majors.
+- **Student Authentication:** Secure registration and login using Firebase Authentication.
+- **Course Enrollment:** Manage student enrollments and different course access levels.
+- **Learning Materials:** Access supporting documents and educational resources.
+- **Admin Dashboard:** Manage courses, lessons, modules, documents, and student enrollments.
+- **Responsive Design:** Accessible user experience across desktop and mobile devices.
 
-## React Compiler
+### 🛠️ Technologies Used
+- **Frontend:** React.js
+- **Backend Services:** Firebase
+- **Database:** Cloud Firestore
+- **Authentication:** Firebase Authentication
+- **Deployment:** Vercel
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+### 💡 Development Overview
+This project involved developing a complete web application, integrating frontend components with Firebase services, implementing authentication and course access management, integrating video streaming, and building administrative functionalities for managing educational content.
 
-## Expanding the ESLint configuration
+### 🌐 Live Website
+https://www.najje7na.com
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Najje7na – Learn Better. Achieve More.** 🚀
