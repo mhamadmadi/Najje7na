@@ -9,7 +9,7 @@ initializeApp();
 const db = getFirestore();
 const BUNNY_TOKEN_KEY = defineSecret("BUNNY_TOKEN_KEY");
 
-const BUNNY_LIBRARY_ID = "795731";
+const BUNNY_LIBRARY_ID = "800649";
 
 exports.getLessonPlayback = onCall(
   {
