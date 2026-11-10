@@ -44,7 +44,7 @@ function AdminEnrollments(){
             const enrollmentId = `${selectedStudent}_${selectedCourse}`;
             await setDoc(doc(db, "enrollments", enrollmentId), {
                 userId: selectedStudent,
-                courseId: Number(selectedCourse),
+                courseId: selectedCourse,
                 accessLevel: accessLevel,
                 grantedAt: serverTimestamp(),
             });
