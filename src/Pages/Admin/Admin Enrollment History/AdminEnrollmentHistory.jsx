@@ -15,13 +15,30 @@ function AdminEnrollmentHistory(){
                 const data = docSnap.data();
 
                 let courseTitle = "Unknown course";
-                try {
-                    const courseSnap = await getDoc(doc(db, "courses", String(data.courseId)));
-                    if (courseSnap.exists()) courseTitle = courseSnap.data().title;
-                } catch (err) {
-                    console.error("Error fetching course:", err);
-                }
 
+                try {
+                    let courseId = data.courseId;
+                    if (
+                        typeof courseId !== "string" || !courseId.trim()) {
+                        const enrollmentPrefix = `${data.userId}_`;
+
+                        if (docSnap.id.startsWith(enrollmentPrefix)) {
+                        courseId = docSnap.id.slice(enrollmentPrefix.length);
+                        } else {
+                          courseId = null;
+                        }
+                    }
+
+                    if (courseId) {
+                    const courseSnap = await getDoc(doc(db, "courses", String(courseId)));
+
+                    if (courseSnap.exists()) {
+                    courseTitle = courseSnap.data().title || "Unknown course";
+                    }
+                 }
+            } catch (err) {
+              console.error("Error fetching course:", err);
+            }
                 let studentInfo = { name: "Unknown", email: "Unknown" };
                 try {
                     const userSnap = await getDoc(doc(db, "users", data.userId));
